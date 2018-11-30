@@ -1,3 +1,4 @@
+#Programme de 1/2gt²
 from math import*
 
 g=float(input("Acceleration gravitationnelle: "))
