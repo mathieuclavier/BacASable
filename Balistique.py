@@ -1,6 +1,6 @@
 from math import*
 
-print('Programme de balistqiue générale.')
+print('Programme de balistque générale.')
 
 step1 = input('Calculer la distance parcourue par le projectile ? [o/N]: ')
 step1 = step1.strip().lower()
@@ -12,7 +12,7 @@ if step1.startswith('o'):
     y=float(input('Hauteur initiale/au sol: '))
 
     d=round(((v/cos(a))/g)*(v*sin(a)+sqrt((v*sin(a))*(v*sin(a))+2*g*y)),1)
-    print('La distance parcourue par le projectile est:",d,"m')
+    print('La distance parcourue par le projectile est:',d,'m')
 
     reponse = input('Voulez-vous arrondir plus précisément? [o/N] ')
     reponse = reponse.strip().lower()
@@ -58,3 +58,5 @@ if step3.startswith('o'):
         print('La distance parcourue par le projectile est',v,'m')
     else:
         print('La distance parcourue par le projectile est',v,'m')
+
+        "
