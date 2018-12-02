@@ -24,15 +24,9 @@ if step1.startswith('o'):
     else:
         print("La distance parcourue par le projectile est",d,"m")
 
-
 step2 = input("Calculer la hauteur maximale du projectile ? [o/N]")
 step2 = step2.strip().lower()
 if step2.startswith('o'):
-
-    v=float(input("Vélocitée initiale: "))
-    a=float(input("Angle de tire: "))
-    g=float(input("Atraction gravitationnelle: "))
-    y=float(input("Hauteur initiale/au sol: "))
 
     h=round((v*sin(a))*(v*sin(a))/(2*g)+y,1)
 
@@ -51,4 +45,16 @@ if step2.startswith('o'):
 step3 = input("Calculer la vitesse finale du projectile ?:")
 step3 = step3.strip().lower()
 if step3.startswith('o'):
-    
+
+    v=round(sqrt(2*g*y),1)
+    print("la vitesse finale du projectile est:",v,"m/s")
+
+    reponse = input("Voulez-vous arrondir plus précisément? [o/N] ")
+    reponse = reponse.strip().lower()
+
+    if reponse.startswith('o'):
+        x=int(input("A combien de chiffre voulez-vous arrondir?: "))
+        v=round(sqrt(2*g*y),x)
+        print("La distance parcourue par le projectile est",v,"m")
+    else:
+        print("La distance parcourue par le projectile est",v,"m")
