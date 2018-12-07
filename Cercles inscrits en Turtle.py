@@ -14,4 +14,5 @@ while 1>0:
       forward(l)
       left(360/x)
     x=x-10*e
+  input("Recommencer [Entrée]:")
   clear()
