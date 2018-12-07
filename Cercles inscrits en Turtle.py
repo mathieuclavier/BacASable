@@ -7,17 +7,11 @@ e=1
 
 reponse = input('Dimentions des cercles exponentielle? [o/N] ')
 reponse = reponse.strip().lower()
-    
+
 for i in range(n):
+  if reponse.startswith('o'):
+   e=e+1
   for i in range(x):
     forward(l)
     left(360/x)
   x=x-10*e
-  
-if reponse.starwith ('o'):
-  e=e+1
-else:
-  input()
-  
-
-  
