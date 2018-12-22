@@ -58,5 +58,3 @@ if step3.startswith('o'):
         print('La distance parcourue par le projectile est',v,'m')
     else:
         print('La distance parcourue par le projectile est',v,'m')
-
-        "
