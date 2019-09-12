@@ -19,4 +19,5 @@ while True:
       print("x1 =" Fraction(b**2-sqrt(delta))/2*a))
       print("x2 =" Fraction(b**2+sqrt(delta))/2*a))
       
+      
     
